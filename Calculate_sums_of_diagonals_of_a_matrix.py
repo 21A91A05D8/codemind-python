@@ -1,13 +1,13 @@
-s=int(input())
-p=sp=0
-for i in range(s):
+a=int(input())
+pd=sd=0
+for i in range(a):
     arr=list(map(int,input().split()))
-    for j in range(s):
+    for j in range(a):
         if i==j:
-            p+=arr[j]
-        if i+j==s-1:
-            sp+=arr[j]
-print("Principal Diagonal:",end='')
-print(p)
-print("Secondary Diagonal:",end='')
-print(sp)
+            pd+=arr[j]
+        if i+j==a-1:
+            sd+=arr[j]
+print("Principal Diagonal:",end="")
+print(pd)
+print("Secondary Diagonal:",end="")
+print(sd)

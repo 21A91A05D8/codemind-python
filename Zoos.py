@@ -1,25 +1,12 @@
-s=input()
-zz=0
+a=input()
+zo=0
 co=0
-for i in s:
-    if i=='z':
-        zz+=1
-    elif i=='o':
+for i in a:
+    if(i=='z'):
+        zo+=1
+    elif(i=='o'):
         co+=1
-if(zz*2==co):
+if(zo*2==co):
     print("Yes")
 else:
     print("No")
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,0 +1,5 @@
+a= input()
+x=a.replace(" ",'')
+mi=min(x)
+ma=max(x)
+print(mi,x.count(mi),ma,x.count(ma))

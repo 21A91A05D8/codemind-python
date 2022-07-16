@@ -1,4 +1,3 @@
-s=input()
-s=s.split(' ')
+s=input().split()
 for i in s:
-    print(abs(ord(max(i))-ord(min(i))),end=' ')
+    print(abs(ord(min(i))-ord(max(i))),end=' ')

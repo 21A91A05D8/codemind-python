@@ -1,11 +1,10 @@
-n = int(input())
-arr = list(map(int,input().split()))
-k = int(input())
-a = []
-for i in range(n):
-    if arr.count(arr[i])==k and arr[i] not in a:
-        a.append(arr[i])
-if len(a)==0:
+n=int(input())
+a=list(map(int,input().split()))
+k=int(input())
+c=0
+for i in sorted(set(a),key=a.index):
+      if a.count(i)==k:
+        print(i,end=" ")
+        c = 1
+if c==0:
     print("-1")
-else:
-    print(*a)

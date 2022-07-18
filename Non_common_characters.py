@@ -1,13 +1,14 @@
-s1 = input().lower()
-s2 = input().lower()
-s1 =s1.replace(" ","")
-s2 =s2.replace(" ","")
-a = ''
-for i in s1:
-    if i not in s2 and i not in a:
-        a+=i
-for i in s2:
-    if i not in s1 and i not in a:
-        a+=i
-a=sorted(a)
-print(len(a))
+a=input().lower()
+b=input().lower()
+a=a.replace(" ","")
+b=b.replace(" ","")
+s=''
+for i in a:
+    if i not in b and i not in s:
+        s+=i
+for i in b:
+    if i not in a and i not in s:
+        s+=i
+s=sorted(s)
+s=''.join(s)
+print(len(s))

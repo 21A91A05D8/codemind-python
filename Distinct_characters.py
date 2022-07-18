@@ -1,5 +1,4 @@
-n = input()
-n = n.lower()
+n = input().lower()
 n = n.replace(" ","")
 s = []
 for i in range(0,len(n)):
@@ -7,11 +6,5 @@ for i in range(0,len(n)):
     if c==1:
         s.append(n[i])
 s.sort()
-s = str(s)
-s = s.replace(",","")
-s = s.replace("[","")
-s = s.replace("]","")
-s = s.replace(",","")
-s = s.replace("'","")
-s = s.replace(" ","")
+s="".join(s)
 print(s)

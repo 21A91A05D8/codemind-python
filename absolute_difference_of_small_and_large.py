@@ -1,3 +1,3 @@
-s=input().split()
-for i in s:
-    print(abs(ord(min(i))-ord(max(i))),end=' ')
+n=input().split()
+for i in n:
+    print(abs(ord(max(i)))-ord(min(i)),end=' ')

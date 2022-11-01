@@ -1,9 +1,17 @@
-def rev(s):
-    return s[::-1]
-a=input()
-arr=list(a.split())
-for i in range(len(arr)):
-    if i%2==0:
-        print(rev(arr[i]),end=' ')
+s=input()
+l=list(s.split(' '))
+s1=''
+for i in range(len(l)):
+    if i!=len(l)-1:
+        if i%2==0:
+            k=l[i]
+            s1+=k[::-1]+' '
+        else:
+            s1+=l[i]+' '
     else:
-        print(arr[i],end=' ')
+        if i%2==0:
+            k=l[i]
+            s1+=k[::-1]
+        else:
+            s1+=l[i]
+print(s1)        

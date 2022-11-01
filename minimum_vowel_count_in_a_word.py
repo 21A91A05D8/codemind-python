@@ -1,14 +1,12 @@
-a=input()
-arr=list(a.split())
-vow=list("aeiouAEIOU")
-ma=100
-
-for i in arr:
+s=list(input().split())
+vo='AEIOUaeiou'
+c=0
+m=1000
+for i in s:
     c=0
     for j in i:
-        if j in vow:
+        if j in vo:
             c+=1
-    if ma>c:
-        ma=c
-
-print(ma)
+    if(m>c):
+       m=c 
+print(m)
